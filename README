@@ -1,0 +1,23 @@
+Hey! Hopefully this worked lol
+
+The first route is automatically generated. Feel free to change it later.
+Most of the popular imports are aldready imported in "app.py", but you can also
+import your own imports.
+
+Your HTML goes in TEMPLATES
+your CSS, IMAGES, and JS go in STATIC
+
+To link files from static, use this:
+
+    CSS
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+    JS
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    Images
+    <img src="{{ url_for('static', filename='img.jpg') }}" alt="">
+
+        if the image url is a variable:
+
+            <img src="{{ url_for('static', filename=variable ) }}" alt="">
